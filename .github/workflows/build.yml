@@ -3,6 +3,7 @@ on: [push, workflow_dispatch]
 jobs:
   build:
     strategy:
+      fail-fast: false
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
@@ -15,5 +16,5 @@ jobs:
       - run: cmake --build build --config Release
       - uses: actions/upload-artifact@v4
         with:
-          name: game-${{ matrix.os }}
+          name: coinRush-${{ matrix.os }}
           path: build/out/
