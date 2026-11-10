@@ -9,3 +9,4 @@ Notes:
 - The game has a fixed window size
 - This Game has a lot of potential to grow, but I decided to keep it short and simple for personal practice
 - Game only tested on macOS with apple silicon
+- Because I don't now cmake yet I vibe-coded the txt-file
